@@ -1,3 +1,6 @@
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 import NotificationButton from '../NotificationButton'
 import './style.css'
 
@@ -7,10 +10,20 @@ function SalesCard() {
             <h2 className="dsmeta-sales-title">Vendas</h2>
             <div>
                 <div className="dsmeta-form-control-countainer">
-                    <input className="dsmeta-form-control" type="text"/>
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="dsmeta-form-control"
+                        dateFormat="dd/MM/yyyy"
+                    />
                 </div>
                 <div className="dsmeta-form-control-countainer">
-                    <input className="dsmeta-form-control" type="text"/>
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="dsmeta-form-control"
+                        dateFormat="dd/MM/yyyy"
+                    />
                 </div>
             </div>
 
@@ -29,7 +42,7 @@ function SalesCard() {
                     </thead>
                     <tbody>
                         <tr>
-                            <td className="show992">#341</td>
+                            <td className="show992">#001</td>
                             <td className="show576">21/07/2022</td>
                             <td>Bulbassaur</td>
                             <td className="show992">15</td>
@@ -37,33 +50,33 @@ function SalesCard() {
                             <td>R$ 55200.00</td>
                             <td>
                                 <div className="dsmeta-red-btn-container">
-                                    <NotificationButton/>
+                                    <NotificationButton />
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td className="show992">#341</td>
+                            <td className="show992">#002</td>
                             <td className="show576">21/07/2022</td>
-                            <td>Bulbassaur</td>
+                            <td>Ivyssaur</td>
                             <td className="show992">15</td>
                             <td className="show992">11</td>
                             <td>R$ 55200.00</td>
                             <td>
                                 <div className="dsmeta-red-btn-container">
-                                <NotificationButton/>
+                                    <NotificationButton />
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td className="show992">#341</td>
+                            <td className="show992">#003</td>
                             <td className="show576">21/07/2022</td>
-                            <td>Bulbassaur</td>
+                            <td>Venussaur</td>
                             <td className="show992">15</td>
                             <td className="show992">11</td>
                             <td>R$ 55200.00</td>
                             <td>
                                 <div className="dsmeta-red-btn-container">
-                                <NotificationButton/>
+                                    <NotificationButton />
                                 </div>
                             </td>
                         </tr>
